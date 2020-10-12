@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Puzzle Game</title>
+    <style>
+        html{
+            margin:0px; 
+            padding:0px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container {
+            width:75%;
+            margin:auto;    
+        }
+
+        #header {
+            margin-top:20px;
+            height:90px;
+            background-color: cadetblue;
+            color:cornsilk;
+            line-height: 85px;
+        }
+        
+        body{
+            color:cadetblue
+        }
+
+
+        form#guess {
+            padding-top:10px;
+            padding-bottom:15px;
+            margin:3px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class='container'>
+        <div id='header'>
+            <h1>Puzzle Game</h1>
+        </div>
+            <div id='main'>
+                <h2>Are you smart enough? Try this out!</h2>
+                <h3>1 + 4 = 5</h3>
+                <h3>2 + 5 =12</h3>
+                <h3>3 + 6 =21</h3>
+                <h3>8 + 11 = ？</h3>
+            </div>
+                <form id='puzzle'>
+                    <label>
+                        Enter Your Answer：
+                    </label>
+                    <input type='text' name='answer'>
+                    <br>
+                    <br>
+                    <button id='submitBtn' type='submit'>Submit</button>
+                </form>
+        </div>    
+    </center>
+    <script>
+        function answerCheck() {
+         var answer = document.forms[0].answer.value;
+             if (answer == "96") {
+                 alert("Congradulations! You've got the answer right!");
+             } else {
+                 alert("Sorry, that's not correct. Have another go!");
+             } }
+            document.getElementById('submitBtn').addEventListener('click', answerCheck);
+    </script>
+</body>
+</html>
