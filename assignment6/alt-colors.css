@@ -1,0 +1,20 @@
+.dark-overlay, .dark-overlay.fill-right:after, .dark-overlay.fill-left:after {
+  background-color: rgba(72, 100, 177, 0.801);
+}
+
+.styled-accordion .panel-default>.panel-heading {
+  background-color: rgba(72, 100, 177);
+}
+
+.carousel-control.left, .carousel-control.right {
+  background: rgba(72, 100, 177);
+}
+
+.btn-primary {
+    background-color: goldenrod;
+    border-color:goldenrod;
+}
+
+a, a:hover {
+    color:  rgba(72, 100, 177);
+}
