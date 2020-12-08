@@ -20,7 +20,6 @@ a {
 
 a:hover {
   color: #f79e85;
-  text-decoration: none;
 }
 
 
@@ -1521,6 +1520,129 @@ section {
   }
 }
 
+
+/*--------------------------------------------------------------
+# 查找
+--------------------------------------------------------------*/
+.site-vh-100 {
+  height: 100vh;
+}
+
+@media screen and (max-width: 960px) {
+  .site-vh-100 {
+    height: inherit;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+}
+
+.site-vh-75 {
+  height: 75vh;
+}
+
+@media screen and (max-width: 960px) {
+  .site-vh-75 {
+    height: inherit;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+}
+
+.site-tab-nav {
+  padding: 0;
+  margin: 0;
+  display: inline-block !important;
+}
+
+@media screen and (max-width: 576px) {
+  .site-tab-nav {
+    display: block !important;
+    margin-bottom: 10px;
+    width: 100% !important;
+  }
+}
+
+.site-tab-nav li {
+  padding: 0;
+  margin: 0 5px;
+  display: inline-block !important;
+}
+
+@media screen and (max-width: 576px) {
+  .site-tab-nav li {
+    display: block !important;
+    margin-bottom: 10px;
+    width: 100% !important;
+  }
+}
+
+.site-tab-nav li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .2em;
+  color: #ccc;
+  border: 2px solid #ccc;
+  border-radius: 0 !important;
+}
+
+.site-tab-nav li a.active {
+  background: none !important;
+  color: black !important;
+  border: 2px solid #000;
+}
+
+.menu-item h5{
+  text-align: center;
+  color: #ff7f5d
+}
+
+.menu-item {
+  margin-bottom: 30px;
+  text-align: center
+}
+
+#types .menu-item img {
+  width: 420px;
+  height:290px;
+  border-radius: 0;
+  margin-bottom: 8px;
+  margin-right: -23%;
+  
+}
+
+#browsing .menu-item img {
+  width: 270px;
+  height:360px;
+  border-radius: 0;
+  margin-bottom: 8px;
+  margin-right: -23%;
+}
+
+.media-body h5{
+  text-align: center;
+  margin-right: -23%;
+}
+
+.menu-item p {
+  margin-bottom: 0;
+  color: #919191;
+  font-size: 14px;
+  text-align: center;
+  margin-right: -23%;
+}
+
+.menu-item h5 {
+  text-align: center;
+  margin-right: -23%;
+}
+
+.menu-item .menu-price {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+}
+
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1660,122 +1782,4 @@ section {
 }
 
 
-
-
-/*--------------------------------------------------------------
-# 查找
---------------------------------------------------------------*/
-.site-vh-100 {
-  height: 100vh;
-}
-
-@media screen and (max-width: 960px) {
-  .site-vh-100 {
-    height: inherit;
-    padding-top: 5em;
-    padding-bottom: 5em;
-  }
-}
-
-.site-vh-75 {
-  height: 75vh;
-}
-
-@media screen and (max-width: 960px) {
-  .site-vh-75 {
-    height: inherit;
-    padding-top: 5em;
-    padding-bottom: 5em;
-  }
-}
-
-.site-tab-nav {
-  padding: 0;
-  margin: 0;
-  display: inline-block !important;
-}
-
-@media screen and (max-width: 576px) {
-  .site-tab-nav {
-    display: block !important;
-    margin-bottom: 10px;
-    width: 100% !important;
-  }
-}
-
-.site-tab-nav li {
-  padding: 0;
-  margin: 0 5px;
-  display: inline-block !important;
-}
-
-@media screen and (max-width: 576px) {
-  .site-tab-nav li {
-    display: block !important;
-    margin-bottom: 10px;
-    width: 100% !important;
-  }
-}
-
-.site-tab-nav li a {
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: .2em;
-  color: #ccc;
-  border: 2px solid #ccc;
-  border-radius: 0 !important;
-}
-
-.site-tab-nav li a.active {
-  background: none !important;
-  color: black !important;
-  border: 2px solid #000;
-}
-
-.menu-item h5{
-  text-align: center;
-  color: #ff7f5d
-}
-
-.menu-item {
-  margin-bottom: 30px;
-  text-align: center
-}
-
-#types .menu-item img {
-  width: 400px;
-  height:280px;
-  border-radius: 0;
-  margin-bottom: 8px;
-  margin-left: 60px
-  
-}
-
-#browsing .menu-item img {
-  width: 270px;
-  height:360px;
-  border-radius: 0;
-  margin-bottom: 8px;
-  margin-left: 40px
-  
-}
-
-.media-body h5{
-  text-align: center;
-}
-
-.menu-item p {
-  margin-bottom: 0;
-  color: #919191;
-  font-size: 14px;
-}
-
-.menu-item h5 {
-  text-align: center;
-}
-
-.menu-item .menu-price {
-  font-family: "Playfair Display", serif;
-  font-size: 24px;
-}
 
