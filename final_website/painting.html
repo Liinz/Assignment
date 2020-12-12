@@ -112,21 +112,46 @@
 
   <main id="main">
 
-    <!-- ======= 摄影 ======= -->
-    <section id="painting" class="painting">
-      <div class="painting">
-
-        <div class="section-title">
-          <h1>画展</h1>
-          <p>以下结果以【结束日期由近至远】的顺序为您排列</p>
-          <p>您可以点击图片，浏览展览详情</p>
-          <p>或是<a href="index.html#types">返回重新选择<p></a>
-        </div>
+   <!-- ======= table ======= -->
+   <section id="money" class="money">
+    <div class="money">
+      <div class="section-title">
+        <h1>画展</h1>
         <center>
-        <iframe class="airtable-embed" src="https://airtable.com/embed/shrFehWjUnXNgrAfc?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="90%" height="800" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        <form style="width: 20%;">
+            <p>请选择排列方式：
+            <br><br>
+            <select id="selecter" class="form-control" onchange="table();">
+                    <option value="" selected="" disabled="">-----</option>
+                    <option value="0">展馆所在区域</option>
+                    <option value="1">门票价格区间</option>
+                    <option value="2">结束日期由早到晚</option>
+            </select>
+        </form>
         </center>
+        <br>
+        <p>或是<a href="index.html#types">返回重新选择查找条件<p></a>
       </div>
-    </section><!-- End About Section -->
+      <div>
+            <!--airtable--> 
+            <div id="table">
+              <center>
+              <iframe id="airtable-embed" src="https://airtable.com/embed/shrQqdZXjIlOtiav2?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="90%" height="800" style="background: transparent; border: 1px solid #ccc;"></iframe>
+              </center>
+            </div>
+      </div>
+        <!--js-->
+        <script>
+        function table(){
+            var selecter = parent.document.getElementById("selecter");
+                        if (selecter.value=="0"){document.getElementById("airtable-embed").src="https://airtable.com/embed/shrhY5OETphOT2elC?backgroundColor=yellow&viewControls=on"};
+                        if (selecter.value=="1"){document.getElementById("airtable-embed").src="https://airtable.com/embed/shrrqYMecN26HxrJn?backgroundColor=yellow&viewControls=on"};
+                        if (selecter.value=="2"){document.getElementById("airtable-embed").src="https://airtable.com/embed/shrECVvKKOZRhol5Y?backgroundColor=yellow&viewControls=on"};
+                    }
+         </script>
+    </div>
+  </section>
+  <!-- End table Section -->
 
     <!-- ======= Footer ======= -->
   <footer id="footer">
