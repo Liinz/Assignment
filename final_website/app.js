@@ -35,12 +35,12 @@ function clear_map() {
 
     var map = L.map('map')
       .addLayer(mapboxTiles)
-      .setView([31.246839, 121.499775], 17);
+      .setView([31.2228143, 121.474048], 11);
 
     layerGroup = L.layerGroup().addTo(map);
 
     var items = [];
-    var airtable_read_endpoint = "https://api.airtable.com/v0/appKIU0zkdHt3AVTL/Venues?api_key=keycj6dRwXwYLEjiv";
+    var airtable_read_endpoint = "https://api.airtable.com/v0/appEpSTexILVjl4AS/Galleries?api_key=keyoqDJjf0JgN8eFB";
     var data = [];
     $.getJSON(airtable_read_endpoint, function(result) {
           $.each(result.records, function(key,value) {
@@ -84,3 +84,4 @@ function clear_markers () {
                // map.removeLayer(marker);
                layerGroup.clearLayers();
 }
+
